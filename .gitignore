@@ -1,13 +1,103 @@
-models/
-sample_*.wav
-*.wav
-!ref_audio.wav
-*.json
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+
+# Distribution / packaging bloat
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments & embedded runtimes
 .venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+python_embeded/
+PortableGit/
+
+# Archives & compressed bundles
+*.7z
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.xz
+*.rar
+
+# Model checkpoints & large weights
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.engine
+*.ckpt
+
+# External bundles & checkpoints (e.g. ACE-Step)
+ACE-Step*/
+
+# Caches & test artifacts
 .cache/
-outputs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 artifacts/
+
+# Audio outputs and test artifacts
+*.wav
+sample_*.wav
+narrator_test.wav
+!ref_audio.wav
+!ref_audio_2.wav
+!ref_audio_3.wav
+!samples/**/*.wav
+
+# JSON outputs & benchmark runs
+*.json
+bench_results_*.json
+
+# Native builds & outputs
 packages/qwentts_cpp_python/
+outputs/
+
+# GUI data & runtime logs
 gui/data/
+*.log
+logs/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.directory
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
