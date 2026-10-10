@@ -10,3 +10,4 @@ __pycache__/
 outputs/
 artifacts/
 packages/qwentts_cpp_python/
+gui/data/
